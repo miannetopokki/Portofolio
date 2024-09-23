@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Portfolio - Ubuntu CLI Style</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <h1></h1>
+    <pre class="ascii-art">
+        _    _                   _  _____    _____ _      _____ 
+       | |  | |                 ( )/ ____|  / ____| |    |_   _|
+       | |__| |_   _  __ _  ___ |/| (___   | |    | |      | |  
+       |  __  | | | |/ _` |/ _ \   \___ \  | |    | |      | |  
+       | |  | | |_| | (_| | (_) |  ____) | | |____| |____ _| |_ 
+       |_|  |_|\__,_|\__, |\___/  |_____/   \_____|______|_____|
+                      __/ |                                     
+                     |___/                                       
+          </pre>
+    <header class="header">
+
+        <h1>Executing 'portfolio.exe'... Welcome!</h1>
+    </header>
+    <section class="flex-container column">
+        <section class="flex-container row">
+            <section class="flex-item-text select-box">
+                <h1>Command</h1>
+            </section>
+            <section class="flex-item-text result">
+                <h1>Result</h1>
+            </section>
+        </section>
+        <section class="flex-container row ">
+            <section class="flex-container column select-box">
+                <section class="flex-item select-box grid-container green-border">
+                    <a href="#aboutContent" class="link">
+                        <div class="grid-item">
+                            <h3>
+                                ABOUT ME
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#projectsContent" class="link">
+                        <div class="grid-item">
+                            <h3>
+                                PROJECTS
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#contactContent" class="link">
+                        <div class="grid-item">
+                            <h3>
+                                CONTACT
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#ExpContent class=" class="link">
+                        <div class="grid-item">
+                            <h3>
+                                EXPERIENCE
+                            </h3>
+                        </div>
+                    </a>
+                </section>
+            </section>
+
+            <section class="flex-item result green-border">
+                <section class="flex-container dynamic row" >
+                    <div id="aboutContent" class="content flex-item green-border">
+                        <span class="prompt">root@LordHugo:~$ </span><span class="command"></span>cat about.txt<span
+                            class="cursor"></span>
+                        
+                    </div>
+                    <div id="projectsContent" class="content flex-item green-border"><span class="prompt">root@LordHugo:~$ </span><span
+                            class="command"></span>ls projects<span class="cursor"></span>
+                            <section class="">
+
+                            </section>
+                    </div>
+                    <div id="contactContent" class="content flex-item green-border"><span class="prompt">root@LordHugo:~$ </span><span
+                            class="command"></span>cat contact.txt<span class="cursor"></span></div>
+                </section>
+                <section class="dynamic">
+
+                </section>
+            </section>
+        </section>
+
+    </section>
+
+
+    </section>
+
+
+
+
+
+    <!-- <article>
+        <p><span class="prompt">root@LordHugo:~$</span> <span class="command">ls projects</span></p>
+        <p class="output">project1.txt project2.txt project3.txt</p>
+    </article>
+
+    <article>
+        <p><span class="prompt">root@LordHugo:~$</span> <span class="command">cat project1.txt</span></p>
+        <p class="output">Project 1: Portfolio Website<br>A simple and effective portfolio site with a Ubuntu CLI theme.
+        </p>
+    </article>
+
+    <footer>
+        <p><span class="prompt">root@LordHugo:~$</span> <span class="command">cat contact.txt</span></p>
+        <p class="output">Email: <a href="mailto:you@example.com" style="color: #00ff00;">you@example.com</a></p>
+    </footer> -->
+
 </body>
+
 </html>
