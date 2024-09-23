@@ -9,87 +9,116 @@
 
 </head>
 
-<body>
-    <pre class="ascii-art">
-        _    _                   _  _____    _____ _      _____ 
-       | |  | |                 ( )/ ____|  / ____| |    |_   _|
-       | |__| |_   _  __ _  ___ |/| (___   | |    | |      | |  
-       |  __  | | | |/ _` |/ _ \   \___ \  | |    | |      | |  
-       | |  | | |_| | (_| | (_) |  ____) | | |____| |____ _| |_ 
-       |_|  |_|\__,_|\__, |\___/  |_____/   \_____|______|_____|
-                      __/ |                                     
-                     |___/                                       
-          </pre>
-    <header class="header">
+<body class="">
+    <section class="semibody box-shadow-3d green-border">
+        <pre class="ascii-art">
+            _    _                   _  _____    _____ _      _____ 
+           | |  | |                 ( )/ ____|  / ____| |    |_   _|
+           | |__| |_   _  __ _  ___ |/| (___   | |    | |      | |  
+           |  __  | | | |/ _` |/ _ \   \___ \  | |    | |      | |  
+           | |  | | |_| | (_| | (_) |  ____) | | |____| |____ _| |_ 
+           |_|  |_|\__,_|\__, |\___/  |_____/   \_____|______|_____|
+                          __/ |                                     
+                         |___/                                       
+              </pre>
+        <header class="header">
 
-        <h1>Executing 'portfolio.exe'... Welcome!</h1>
-    </header>
-    <section class="flex-container column">
-        <section class="flex-container row">
-            <section class="flex-item-text select-box">
-                <h1>Command</h1>
-            </section>
-            <section class="flex-item-text result">
-                <h1>Result</h1>
-            </section>
-        </section>
-        <section class="flex-container row ">
-            <section class="flex-container column select-box">
-                <section class="flex-item select-box grid-container green-border">
-                    <a href="#aboutContent" class="link">
-                        <div class="grid-item">
-                            <h3>
-                                ABOUT ME
-                            </h3>
-                        </div>
-                    </a>
-                    <a href="#projectsContent" class="link">
-                        <div class="grid-item">
-                            <h3>
-                                PROJECTS
-                            </h3>
-                        </div>
-                    </a>
-                    <a href="#contactContent" class="link">
-                        <div class="grid-item">
-                            <h3>
-                                CONTACT
-                            </h3>
-                        </div>
-                    </a>
-                    <a href="#ExpContent class=" class="link">
-                        <div class="grid-item">
-                            <h3>
-                                EXPERIENCE
-                            </h3>
-                        </div>
-                    </a>
+            <h1>Executing 'portfolio.exe'... Welcome!</h1>
+        </header>
+        <section class="flex-container column " id="outer">
+
+
+            <section class="flex-container row">
+                <section class="flex-item-text select-box">
+                    <h1>Command</h1>
+                </section>
+                <section class="flex-item-text result">
+                    <h1>Result</h1>
                 </section>
             </section>
 
-            <section class="flex-item result green-border">
-                <section class="flex-container dynamic row" >
-                    <div id="aboutContent" class="content flex-item green-border">
-                        <span class="prompt">root@LordHugo:~$ </span><span class="command"></span>cat about.txt<span
-                            class="cursor"></span>
-                        
-                    </div>
-                    <div id="projectsContent" class="content flex-item green-border"><span class="prompt">root@LordHugo:~$ </span><span
-                            class="command"></span>ls projects<span class="cursor"></span>
-                            <section class="">
+            <!--COMMAND SECTION-->
+            <section class="flex-container row ">
+                <section class="flex-container column select-box">
+
+                    <!--GRID SECTION-->
+                    <section class="flex-item select-box grid-container ">
+                        <a href="#aboutContent" class="link">
+                            <div class="grid-item box-shadow-3d">
+                                <h3>
+                                    ABOUT ME
+                                </h3>
+                            </div>
+                        </a>
+                        <a href="#projectsContent" class="link ">
+                            <div class="grid-item box-shadow-3d">
+                                <h3>
+                                    PROJECTS
+                                </h3>
+                            </div>
+                        </a>
+                        <a href="#contactContent" class="link ">
+                            <div class="grid-item box-shadow-3d">
+                                <h3>
+                                    CONTACT
+                                </h3>
+                            </div>
+                        </a>
+                        <a href="#ExpContent class=" class="link ">
+                            <div class="grid-item box-shadow-3d">
+                                <h3>
+                                    EXPERIENCE
+                                </h3>
+                            </div>
+                        </a>
+                    </section>
+                </section>
+                <!-- <div class="vertical-line"></div> -->
+
+
+                <!--RESULT SECTION-->
+                <section class="flex-item result ">
+                    <section class="flex-container dynamic row">
+                        <div id="aboutContent" class="content flex-item ">
+                            <span class="prompt">root@LordHugo:~$ </span><span class="command"></span>cat about.txt<span
+                                class="cursor"></span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+                        </div>
+                        <div id="projectsContent" class="content flex-item ">
+                            <section class="flex-container column ">
+                                <section class="flex-item">
+                                    <span class="prompt">root@LordHugo:~$ </span><span class="command"></span>ls
+                                    projects<span class="cursor"></span>
+
+                                </section>
+                                <section class="flex-item" style="color: cadetblue;">P1 P2 P3 P4</section>
+                                <section class="flex-item projects-container">
+                                    <div class="project-item">P1</div>
+                                    <div class="project-item">P2</div>
+                                    <div class="project-item">P3</div>
+                                    <div class="project-item">P4</div>
+
+                                </section>
 
                             </section>
-                    </div>
-                    <div id="contactContent" class="content flex-item green-border"><span class="prompt">root@LordHugo:~$ </span><span
-                            class="command"></span>cat contact.txt<span class="cursor"></span></div>
-                </section>
-                <section class="dynamic">
+                        </div>
+                        <div id="contactContent" class="content flex-item "><span class="prompt">root@LordHugo:~$
+                            </span><span class="command"></span>cat contact.txt<span class="cursor"></span></div>
+                    </section>
+                    <section class="dynamic">
 
+                    </section>
                 </section>
             </section>
-        </section>
 
-    </section>
+        </section>
 
 
     </section>
@@ -99,20 +128,22 @@
 
 
     <!-- <article>
-        <p><span class="prompt">root@LordHugo:~$</span> <span class="command">ls projects</span></p>
-        <p class="output">project1.txt project2.txt project3.txt</p>
-    </article>
+            <p><span class="prompt">root@LordHugo:~$</span> <span class="command">ls projects</span></p>
+            <p class="output">project1.txt project2.txt project3.txt</p>
+        </article>
+    
+        <article>
+            <p><span class="prompt">root@LordHugo:~$</span> <span class="command">cat project1.txt</span></p>
+            <p class="output">Project 1: Portfolio Website<br>A simple and effective portfolio site with a Ubuntu CLI theme.
+            </p>
+        </article>
+    
+        <footer>
+            <p><span class="prompt">root@LordHugo:~$</span> <span class="command">cat contact.txt</span></p>
+            <p class="output">Email: <a href="mailto:you@example.com" style="color: #00ff00;">you@example.com</a></p>
+        </footer> -->
+    </section>
 
-    <article>
-        <p><span class="prompt">root@LordHugo:~$</span> <span class="command">cat project1.txt</span></p>
-        <p class="output">Project 1: Portfolio Website<br>A simple and effective portfolio site with a Ubuntu CLI theme.
-        </p>
-    </article>
-
-    <footer>
-        <p><span class="prompt">root@LordHugo:~$</span> <span class="command">cat contact.txt</span></p>
-        <p class="output">Email: <a href="mailto:you@example.com" style="color: #00ff00;">you@example.com</a></p>
-    </footer> -->
 
 </body>
 
