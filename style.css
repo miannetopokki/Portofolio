@@ -2,13 +2,13 @@ body {
     background-color: #1E1E1E;
     color: #00ff00;
     border: #025a02;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Fira Code', monospace;
     margin: 0;
     padding: 40px;
 }
 
 .semibody {
-    height: 1000px;
+    height: 1200px;
     background-color: black;
 }
 
