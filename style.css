@@ -305,8 +305,29 @@ html {
 
 .aboutme {
     gap: 20px;
+    max-width: 1100px;
+
+.about-image{
+    height: 800px;
+    max-height: 800px;
+    max-width: 500px;
+    width: 500px;
+
 }
 
 .aboutme>article>p {
     font-size: 20px;
+}
+
+}
+
+.profile-photo {
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.7); /* Adds shadow */
+    transition: transform 0.3s; /* Smooth effect on hover */
+}
+
+.profile-photo:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
 }
