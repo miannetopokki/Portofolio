@@ -4,12 +4,18 @@ body {
     border: #025a02;
     font-family: 'Fira Code', monospace;
     margin: 0;
-    padding: 40px;
+    padding: 80px;
+    font-size: 20px;
+    
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .semibody {
-    height: 1200px;
+    height: 1800px;
     background-color: black;
+    justify-content: center;
+    
 }
 
 .box-shadow-3d {
@@ -81,13 +87,16 @@ body {
 
 #outer.flex-container {
     margin: 40px;
+    justify-content: center;
+
 
 }
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
+   
 }
+
 
 .column {
     flex-direction: column;
@@ -111,6 +120,7 @@ body {
 .flex-item {
     padding: 5px;
     margin: 10px;
+
 }
 
 .flex-item-text {
@@ -123,21 +133,21 @@ body {
 }
 
 .select-box {
-    flex: 1;
+    flex: 0.5;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     padding: 20px;
-    gap: 20px;
+    gap: 40px;
 }
 
 
 .grid-item {
     border: 1px solid rgba(110, 41, 41, 0.8);
     padding: 20px;
-    font-size: 10px;
+    font-size: 18px;
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -179,10 +189,12 @@ body {
 
 .result {
     flex: 2;
+
 }
 
+
 .vertical-line {
-    border-left: 2px solid rgba(255, 255, 255, 0.363);
+    border-left: 2px solid #1b1b25;
 
     margin: 0 20px;
 }
@@ -227,4 +239,55 @@ body {
 
 .dynamic {
     flex: 1;
+}
+
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #333; /* Tab separator line */
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.tab-button {
+    background-color: #000000; /* Inactive tab background */
+    border: none;
+    padding: 10px 20px;
+    color: #e6e6e6;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+    margin-right: 5px;
+}
+.tab-button.nonactive {
+    background-color: #252526; /* Active tab background */
+    border-bottom: none; /* Remove border to blend with content */
+}
+.terminal {
+    background-color: #000000; /* Dark background like a terminal */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.terminal-tabs{
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.terminal-icons{
+    justify-content: flex-end;
+    padding: 20px;
+
+}
+
+.icons{
+    color: white;
+    font-size: 20px;
+}
+
+.aboutme{
+    gap: 20px;
+}
+
+.aboutme > article >p {
+    font-size: 20px;
 }

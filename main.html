@@ -10,7 +10,7 @@
 </head>
 
 <body class="">
-    <section class="semibody box-shadow-3d green-border">
+    <section class="semibody box-shadow-3d green-border" style="max-width: 2000px;">
         <!-- <pre class="ascii-art">
           
    
@@ -27,7 +27,7 @@
                                   
               </pre> -->
         <pre class="ascii-art">
-            
+
                       ██╗  ██╗██╗   ██╗ ██████╗  ██████╗      ██████╗██╗     ██╗                      
                       ██║  ██║██║   ██║██╔════╝ ██╔═══██╗    ██╔════╝██║     ██║                      
 █████╗█████╗█████╗    ███████║██║   ██║██║  ███╗██║   ██║    ██║     ██║     ██║    █████╗█████╗█████╗
@@ -41,24 +41,22 @@
             <section class="flex-container column" style="text-align: center;">
                 <section>
                 </section>
-                <h1>Executing 'portfolio.exe'... Welcome!</h1>
+                <h1>Booting up portfolio... Welcome!</h1>
             </section>
         </header>
-        <section class="flex-container column " id="outer">
-
-
-            <section class="flex-container row">
+        <section class="flex-container column " id="outer" style="max-width: 2000px;">
+            <!-- <section class="flex-container row">
                 <section class="flex-item-text select-box">
                     <h1>Command</h1>
                 </section>
                 <section class="flex-item-text result">
                     <h1>Result</h1>
                 </section>
-            </section>
+            </section> -->
 
             <!--COMMAND SECTION-->
             <section class="flex-container row ">
-                <section class="flex-container column select-box">
+                <section class="flex-container column select-box " style="height: 800px;">
 
                     <!--GRID SECTION-->
                     <section class="flex-item select-box grid-container ">
@@ -92,49 +90,91 @@
                         </a>
                     </section>
                 </section>
-                <!-- <div class="vertical-line"></div> -->
+                <div class="vertical-line"></div>
 
 
-                <!--RESULT SECTION-->
-                <section class="flex-item result ">
-                    <section class="flex-container dynamic row">
-                        <div id="aboutContent" class="content flex-item ">
-                            <span class="prompt">root@LordHugo:~$ </span><span class="command"></span>cat about.txt<span
-                                class="cursor"></span>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. It has
-                                survived not only five centuries, but also the leap into electronic typesetting,
-                                remaining essentially unchanged. It was popularised in the 1960s with the release of
-                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                <!--TERMINAL-->
+                <section class="flex-container column result" style="background-color: #1b1b25; border-radius: 10px ;">
+                    <div class="flex-container row" style="justify-content: space-between;">
+                        <section class="tabs terminal-tabs ">
+                            <div class="tab-button ">root@LordHugo/home <span style="color: rgb(117, 31, 31);">X</span>
+                            </div>
+                            <div class="tab-button nonactive">root@LordHugo/secret <span
+                                    style="color: rgb(117, 31, 31);">X</span></div>
+                        </section>
+                        <section>
+                            <div class="flex-container row terminal-icons">
+                                <div class="icons flex-item">-</div>
+                                <div class="icons flex-item">[]</div>
+                                <div class="icons flex-item">X</div>
+                            </div>
+                        </section>
 
-                        </div>
-                        <div id="projectsContent" class="content flex-item ">
-                            <section class="flex-container column ">
-                                <section class="flex-item">
-                                    <span class="prompt">root@LordHugo:~$ </span><span class="command"></span>ls
-                                    projects<span class="cursor"></span>
+                    </div>
+                    <!--RESULT SECTION-->
+                    <section class="flex-item  terminal " style="height: 800px;">
+
+                        <section class="flex-container dynamic row ">
+                            <div id="aboutContent" class="content flex-item  ">
+                                <section class="flex-container column ">
+                                    <article class=" flex-item">
+                                        <span class="prompt">root@LordHugo:~$ </span><span class="command"></span>cat
+                                        about.txt<span class="cursor"></span>
+                                    </article>
+                                </section>
+                                <section class="flex-container row  aboutme">
+                                    <article class=" aboutme">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum
+                                            has been the industry's standard dummy text ever since the 1500s, when an
+                                            unknown
+                                            printer took a galley of type and scrambled it to make a type specimen book.
+                                            It
+                                            has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting,
+                                        </p>
+                                    </article>
+                                    <section class="flex-item  ">
+                                        <img src="foto.png" class="about-image">
+                                    </section>
+
 
                                 </section>
-                                <section class="flex-item" style="color: cadetblue;">P1 P2 P3 P4</section>
-                                <section class="flex-item projects-container">
-                                    <div class="project-item">P1</div>
-                                    <div class="project-item">P2</div>
-                                    <div class="project-item">P3</div>
-                                    <div class="project-item">P4</div>
+                            </div>
+                            <div id="projectsContent" class="content flex-item ">
+                                <section class="flex-container column ">
+                                    <section class="flex-item">
+                                        <span class="prompt">root@LordHugo:~$ </span><span class="command"></span>ls
+                                        projects<span class="cursor"></span>
+
+                                    </section>
+                                    <section class="flex-item" style="color: cadetblue;">P1 P2 P3 P4</section>
+                                    <section class="flex-item projects-container">
+                                        <div class="project-item">P1</div>
+                                        <div class="project-item">P2</div>
+                                        <div class="project-item">P3</div>
+                                        <div class="project-item">P4</div>
+
+                                    </section>
 
                                 </section>
-
-                            </section>
-                        </div>
-                        <div id="contactContent" class="content flex-item "><span class="prompt">root@LordHugo:~$
-                            </span><span class="command"></span>cat contact.txt<span class="cursor"></span></div>
-                    </section>
-                    <section class="dynamic">
+                            </div>
+                            <div id="contactContent" class="content flex-item "><span class="prompt">root@LordHugo:~$
+                                </span><span class="command"></span>cat contact.txt<span class="cursor"></span></div>
+                        </section>
 
                     </section>
+
+
+
+
                 </section>
+
+
+
+
             </section>
 
         </section>
@@ -143,24 +183,6 @@
     </section>
 
 
-
-
-
-    <!-- <article>
-            <p><span class="prompt">root@LordHugo:~$</span> <span class="command">ls projects</span></p>
-            <p class="output">project1.txt project2.txt project3.txt</p>
-        </article>
-    
-        <article>
-            <p><span class="prompt">root@LordHugo:~$</span> <span class="command">cat project1.txt</span></p>
-            <p class="output">Project 1: Portfolio Website<br>A simple and effective portfolio site with a Ubuntu CLI theme.
-            </p>
-        </article>
-    
-        <footer>
-            <p><span class="prompt">root@LordHugo:~$</span> <span class="command">cat contact.txt</span></p>
-            <p class="output">Email: <a href="mailto:you@example.com" style="color: #00ff00;">you@example.com</a></p>
-        </footer> -->
     </section>
 
 
