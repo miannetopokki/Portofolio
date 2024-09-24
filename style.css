@@ -6,16 +6,18 @@ body {
     margin: 0;
     padding: 80px;
     font-size: 20px;
-    
+
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 .semibody {
     height: 1800px;
     background-color: black;
     justify-content: center;
-    
+
 }
 
 .box-shadow-3d {
@@ -94,7 +96,7 @@ html {
 
 .flex-container {
     display: flex;
-   
+
 }
 
 
@@ -171,18 +173,19 @@ html {
     gap: 20px;
 }
 
-.project-photo{
+.project-photo {
     max-height: 225px;
     height: 225px;
 }
-.project-desc{
+
+.project-desc {
     max-height: 100px;
     height: 100px;
     font-size: 18px;
     padding: 10px;
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-item:hover {
@@ -258,13 +261,13 @@ html {
 
 .tabs {
     display: flex;
-    border-bottom: 2px solid #333; /* Tab separator line */
+    border-bottom: 2px solid #333;
     margin-bottom: 10px;
     justify-content: space-between;
 }
 
 .tab-button {
-    background-color: #000000; /* Inactive tab background */
+    background-color: #000000;
     border: none;
     padding: 10px 20px;
     color: #e6e6e6;
@@ -272,36 +275,38 @@ html {
     border-radius: 10px 10px 0 0;
     margin-right: 5px;
 }
+
 .tab-button.nonactive {
-    background-color: #252526; /* Active tab background */
-    border-bottom: none; /* Remove border to blend with content */
+    background-color: #252526;
+    border-bottom: none;
 }
+
 .terminal {
-    background-color: #000000; /* Dark background like a terminal */
+    background-color: #000000;
     border-radius: 5px;
     padding: 10px;
 }
 
-.terminal-tabs{
+.terminal-tabs {
     justify-content: flex-start;
     padding: 20px;
 }
 
-.terminal-icons{
+.terminal-icons {
     justify-content: flex-end;
     padding: 20px;
 
 }
 
-.icons{
+.icons {
     color: white;
     font-size: 20px;
 }
 
-.aboutme{
+.aboutme {
     gap: 20px;
 }
 
-.aboutme > article >p {
+.aboutme>article>p {
     font-size: 20px;
 }
