@@ -14,12 +14,16 @@ html {
 }
 
 .semibody {
-    height: 1800px;
     background-color: black;
     justify-content: center;
+    padding: 2%;
+    align-items: center;
+    /* max-width: 3000px; */
 
 }
-
+#change.flex-container{
+    flex-direction: row;
+}
 .box-shadow-3d {
     box-shadow: 1px 1px 0px #025a02,
         2px 2px 0px #025a02,
@@ -55,6 +59,7 @@ html {
     color: #00ff00;
     white-space: pre;
     text-align: center;
+    width: 100%;
     margin: 20px 0;
 
 }
@@ -85,12 +90,14 @@ html {
     display: flex;
     justify-content: center;
     padding: 10px;
+    width: 100%;
 }
 
 #outer.flex-container {
     margin: 40px;
     justify-content: center;
-
+    width: 90%;
+    padding: 10px;
 
 }
 
@@ -112,11 +119,29 @@ html {
     padding: 0;
 }
 
+
+.project-border {
+    border-style: solid;
+    border-color: #025a02;
+    border-width: 2px;
+
+}
+
 .green-border {
     border-style: solid;
     border-color: #025a02;
-    border-width: 1px;
+    border-width: 0px;
 
+}
+.yellow-border{
+    border-style: solid;
+    border-color: #00ff00;
+    border-width: 0px;
+}
+.blue-border{
+    border-style: solid;
+    border-color: #3c3eb88c;
+    border-width: 0px;
 }
 
 .flex-item {
@@ -136,6 +161,7 @@ html {
 
 .select-box {
     flex: 0.5;
+    height: 1000px;
 }
 
 .grid-container {
@@ -167,10 +193,40 @@ html {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 400px 300px;
+    grid-template-columns: 600px 600px ;
+    grid-template-rows: 500px 500px ;
     padding: 10px;
     gap: 20px;
+    overflow-y: auto;
+    max-height: 700px;
+}
+.projects-grids {
+    max-height: 100vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Optional: Add some padding for aesthetics */
+    box-sizing: border-box; /* Include padding in height calculations */
+    grid-template-columns: 120vw;
+    grid-template-rows: 80vw;
+    
+
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.projects-grid::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.projects-grid::-webkit-scrollbar-track {
+    background: black; /* Track color */
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+    background: green; /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.projects-grid::-webkit-scrollbar-thumb:hover {
+    background: darkgreen; /* Thumb color on hover */
 }
 
 .project-photo {
@@ -209,10 +265,16 @@ html {
 
 }
 
+.cli-window{
+    background-color: #1b1b25;
+    border-radius: 10px ;
+    justify-content: space-between;
+
+}
+
 
 .vertical-line {
     border-left: 2px solid #1b1b25;
-
     margin: 0 20px;
 }
 
@@ -220,15 +282,18 @@ html {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease;
-    position: absolute;
-
+    position: absolute;/*Harus fixed soalnya dia invis*/
+    width: 62%; /*Harus fixed soalnya dia invis*/
 }
+
+
 
 .content p {
     text-align: justify;
     line-height: 1.5;
     margin: 10px 0;
-    max-width: 600px;
+    max-width: 900px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 5px;
@@ -243,20 +308,14 @@ html {
     opacity: 1;
 }
 
-#aboutContent:target~.dynamic,
 #aboutContent:target~.show,
-#projectsContent:target~.dynamic,
 #projectsContent:target~.show,
-#contactContent:target~.dynamic,
 #contactContent:target~.show {
     visibility: visible;
     opacity: 1;
 }
 
 
-.dynamic {
-    flex: 1;
-}
 
 
 .tabs {
@@ -280,13 +339,10 @@ html {
     background-color: #252526;
     border-bottom: none;
 }
-
-.terminal {
-    background-color: #000000;
-    border-radius: 5px;
-    padding: 10px;
+.icons {
+    color: white;
+    font-size: 20px;
 }
-
 .terminal-tabs {
     justify-content: flex-start;
     padding: 20px;
@@ -298,36 +354,275 @@ html {
 
 }
 
-.icons {
-    color: white;
-    font-size: 20px;
+.terminal {
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    flex-grow: 1;
+}
+#aboutflex.flex-container{
+    flex-direction: row;
 }
 
+
+
+/* Custom scrollbar styles */
 .aboutme {
-    gap: 20px;
-    max-width: 1100px;
-
-.about-image{
-    height: 800px;
-    max-height: 800px;
-    max-width: 500px;
-    width: 500px;
-
+    max-height: 700px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Optional: Add some padding for aesthetics */
+    box-sizing: border-box; /* Include padding in height calculations */
+    width: 100%;
 }
 
+/* For WebKit browsers (Chrome, Safari) */
+.aboutme::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.aboutme::-webkit-scrollbar-track {
+    background: black; /* Track color */
+}
+
+.aboutme::-webkit-scrollbar-thumb {
+    background: green; /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.aboutme::-webkit-scrollbar-thumb:hover {
+    background: darkgreen; /* Thumb color on hover */
+}
+
+/* For Firefox */
+.aboutme {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: green black; /* Thumb color and track color */
+}
 .aboutme>article>p {
     font-size: 20px;
 }
 
+#ttabs.flex-container{
+    flex-direction: row;
 }
 
 .profile-photo {
-    height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: adds rounded corners */
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.7); /* Adds shadow */
     transition: transform 0.3s; /* Smooth effect on hover */
+    max-height: 800px;
+    max-width: 500px;
 }
 
 .profile-photo:hover {
-    transform: scale(1.05); /* Scale up slightly on hover */
+    transform: scale(1.02); /* Scale up slightly on hover */
 }
+
+
+
+
+@media (max-width: 1200px) {
+    .semibody {
+        /* Ensure no fixed width that exceeds viewport */
+        width: 120vw; /* Changed from 100vh to 100% */
+        background-color: black;
+        justify-content: center;
+        padding: 1%;
+        display: flex;
+        align-items: center;
+    }
+    #change.flex-container{
+        flex-direction: column;
+    }
+    #aboutflex.flex-container{
+        flex-direction: column;
+    }
+    body {
+        background-color: #1E1E1E;
+        color: #00ff00;
+        border: #025a02;
+        font-family: 'Fira Code', monospace;
+        margin: 0;
+        padding: 0px;
+        font-size: 15px;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    .profile-photo {
+        border-radius: 10px; /* Optional: adds rounded corners */
+        transition: transform 0.3s; /* Smooth effect on hover */
+        max-height: 50%;
+        max-width: 100%;
+    }
+    .aboutme>article>p {
+        font-size: 20px;
+    }
+    .profile-photo:hover {
+        transform: scale(1.02); /* Scale up slightly on hover */
+    }
+    .terminal {
+        background-color: #000000;
+        border-radius: 5px;
+        padding: 0px;
+        height: 165vh;
+    }
+    #ttabs.flex-container{
+        flex-direction: column;
+    }
+    .content {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        position: absolute;/*Harus fixed soalnya dia invis*/
+        width: 86vw; /*Harus fixed soalnya dia invis*/
+    }
+    .projects-grid {
+        max-height: 100vh; /* Set a maximum height */
+        overflow-y: auto; /* Enable vertical scrolling */
+        padding: 10px; /* Optional: Add some padding for aesthetics */
+        box-sizing: border-box; /* Include padding in height calculations */
+        grid-template-columns: 120vw;
+        grid-template-rows: 80vw;
+        
+
+    }
+    
+    .project-item {
+        border: 1px solid rgba(110, 41, 41, 0.8);
+        padding: 10px;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Remove fixed height to allow natural sizing */
+        height: auto; /* Optional: Ensure height is auto for flexibility */
+    }
+
+    .project-photo {
+        max-height: 225px; /* Maintain max height for images */
+        width: 100%; /* Make sure images are responsive */
+        object-fit: cover; /* Ensure images cover the area without stretching */
+    }
+    
+    .project-desc {
+        max-height: 100px; /* Maintain max height for description */
+        height: auto; /* Remove fixed height */
+        font-size: 18px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 35vw 35vw;
+        justify-content: center;
+        padding: 20px;
+        gap: 10px;
+    }
+    
+    
+    .grid-item {
+        border: 1px solid rgba(110, 41, 41, 0.8);
+        padding: 20px;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+    
+    #outer.flex-container {
+        margin: 0px;
+        justify-content: center;
+        width: 85%;
+        padding: 10px;
+
+    }
+    .select-box {
+        flex: 0;
+        height: 1000px;
+    }
+    
+    .ascii-art {
+        font-family: "Courier New", Courier, monospace;
+        color: #00ff00;
+        white-space: pre;
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
+    
+    }
+    .ascii-art {
+        font-family: "Courier New", Courier, monospace;
+        color: #00ff00;
+        white-space: pre;
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
+        font-size: 5px; /* Smaller font size for mobile */
+    
+    }
+    .aboutme {
+        max-height: 80vh;
+        overflow-y: auto; /* Enable vertical scrolling */
+        padding: 10px; /* Optional: Add some padding for aesthetics */
+        box-sizing: border-box; /* Include padding in height calculations */
+        width: 100%;
+    }
+    
+    .tabs {
+        display: flex;
+        border-bottom: 2px solid #333;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    
+    }
+    
+    .tab-button {
+        background-color: #000000;
+        border: none;
+        padding: 10px 20px;
+        color: #e6e6e6;
+        cursor: pointer;
+        border-radius: 10px 10px 0 0;
+        margin-right: 5px;
+        max-width: 20vw;
+        max-height: 2vh;
+        font-size: 8px;
+    }
+    
+    .tab-button.nonactive {
+        background-color: #252526;
+        border-bottom: none;
+    }
+    .icons {
+        color: white;
+        font-size: 10px;
+        padding: 1px;
+        margin: 1px;
+    }
+    .terminal-tabs {
+        justify-content: flex-start;
+        padding: 1px;
+    }
+    
+    .terminal-icons {
+        justify-content: flex-start;
+        padding: 10px;
+        max-height: 1vh;
+        align-items: center;
+    }
+    .cli-window{
+        background-color: #1b1b25;
+        border-radius: 10px ;
+        justify-content: space-between;
+    
+    }
+    
+    
+
+        
+    
+    
+}
+
+

@@ -10,8 +10,8 @@
 </head>
 
 <body class="">
-    <section class="semibody box-shadow-3d green-border" style="max-width: 2000px;">
-        <!-- <pre class="ascii-art">
+    <section class="semibody box-shadow-3d green-border column flex-container" >
+        <pre class="ascii-art green-border">
           
    
             ▄█    █▄    ███    █▄     ▄██████▄   ▄██████▄     ▄████████       ▄████████  ▄█        ▄█       
@@ -25,8 +25,8 @@
                                                                                          ▀                   
                                                           
                                   
-              </pre> -->
-        <pre class="ascii-art">
+              </pre>
+        <!-- <pre class="ascii-art">
 
                       ██╗  ██╗██╗   ██╗ ██████╗  ██████╗      ██████╗██╗     ██╗                      
                       ██║  ██║██║   ██║██╔════╝ ██╔═══██╗    ██╔════╝██║     ██║                      
@@ -36,27 +36,19 @@
                       ╚═╝  ╚═╝ ╚═════╝  ╚═════╝  ╚═════╝      ╚═════╝╚══════╝╚═╝                      
                                                                                                       
 
-        </pre>
-        <header class="header">
+        </pre> -->
+        <header class="header green-border">
             <section class="flex-container column" style="text-align: center;">
-                <section>
-                </section>
                 <h1>Booting up portfolio... Welcome!</h1>
             </section>
         </header>
-        <section class="flex-container column " id="outer" style="max-width: 2000px;">
-            <!-- <section class="flex-container row">
-                <section class="flex-item-text select-box">
-                    <h1>Command</h1>
-                </section>
-                <section class="flex-item-text result">
-                    <h1>Result</h1>
-                </section>
-            </section> -->
-
+        <section class="flex-container column blue-border" id="outer">
+  
             <!--COMMAND SECTION-->
-            <section class="flex-container row ">
-                <section class="flex-container column select-box " style="height: 1000px;">
+            <section class="flex-container  green-border " id = "change">
+
+
+                <section class="flex-container column select-box yellow-border ">
 
                     <!--GRID SECTION-->
                     <section class="flex-item select-box grid-container ">
@@ -92,11 +84,10 @@
                 </section>
                 <div class="vertical-line"></div>
 
-
                 <!--TERMINAL-->
-                <section class="flex-container column result" style="background-color: #1b1b25; border-radius: 10px ;">
-                    <div class="flex-container row" style="justify-content: space-between;">
-                        <section class="tabs terminal-tabs ">
+                <section class="flex-container column result cli-window yellow-border" >
+                    <div class="flex-container  yellow-border" style="justify-content: space-between; " id = "ttabs">
+                        <section class="tabs terminal-tabs  ">
                             <div class="tab-button ">root@LordHugo/home <span style="color: rgb(117, 31, 31);">X</span>
                             </div>
                             <div class="tab-button nonactive">root@LordHugo/secret <span
@@ -104,7 +95,7 @@
                             <div class="tab-button nonactive"> + </div>
                         </section>
                         <section>
-                            <div class="flex-container row terminal-icons">
+                            <div class="flex-container yellow-border row terminal-icons">
                                 <div class="icons flex-item">-</div>
                                 <div class="icons flex-item">[]</div>
                                 <div class="icons flex-item">X</div>
@@ -113,18 +104,22 @@
 
                     </div>
                     <!--RESULT SECTION-->
-                    <section class="flex-item  terminal " style="height: 1000px;">
+                    <section class="flex-item  terminal project-border" >
 
-                        <section class="flex-container dynamic row ">
-                            <div id="aboutContent" class="content flex-item  ">
-                                <section class="flex-container column ">
-                                    <article class=" flex-item">
+                        <section class="flex-container row "> <!--INVISIBLE THINGS-->
+                            <!-- ABOUT ME -->
+                            <div id="aboutContent" class="content flex-container column yellow-border ">
+                                <section class="flex-container green-border ">
+                                    <article class=" flex-item ">
                                         <span class="prompt">root@LordHugo:~$ </span><span class="command"></span>cat
                                         about.txt<span class="cursor"></span>
                                     </article>
                                 </section>
-                                <section class="flex-container row  aboutme">
-                                    <article class=" aboutme">
+                                <section class="flex-container  green-border" id = "aboutflex">
+                                    <section class="flex-container  green-border  " >
+                                        <img src="silo.png"  class="profile-photo" >
+                                    </section>
+                                    <article class="aboutme yellow-border">
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                             Lorem
                                             Ipsum
@@ -141,28 +136,48 @@
                                             Ipsum
                                             has been the industry's standard dummy text ever since the 1500s, when an
                                             unknown
-                                           
+                                            printer took a galley of type and scrambled it to make a type specimen book.
+                                            It
+                                            has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting,
                                         </p>
+                                      
                                     </article>
-                                    <section class="flex-container about-image  ">
-                                        <img src="silo.png"  class="profile-photo" style="max-width: fit-content;">
-                                    </section>
+                                   
 
-
+                                  
                                 </section>
                             </div>
-                            <div id="projectsContent" class="content flex-item ">
-                                <section class="flex-container column ">
-                                    <section class="flex-item">
+
+
+                            <!--  PROJECTS  -->
+                            <div id="projectsContent" class="content flex-item yellow-border">
+                                <section class="flex-container column yellow-border">
+                                    <section class="flex-item green-border">
                                         <span class="prompt">root@LordHugo:~$ </span><span class="command"></span>ls
                                         projects<span class="cursor"></span>
 
                                     </section>
-                                    <section class="flex-item" style="color: cadetblue;">P1 P2 P3 P4</section>
-                                    <section class="flex-item projects-grid">
+                                    <section class="flex-item -border" style="color: cadetblue;">P1 P2 P3 P4</section>
+                                    <section class="flex-item projects-grid green-border">
+
                                         <div class="project-item flex-container column">
-                                            <div class="flex-container green-border project-photo"></div>
-                                            <div class="flex-container green-border row project-desc">
+                                            <div class="flex-container project-border project-photo"></div>
+                                            <div class="flex-container project-border row project-desc">
+                                                <div class="" style="flex: 2;">
+                                                    <p>PROJECT 1</p>
+                                                    <p> STATUS : </p>
+                                                </div>
+                                                <div class=" ">
+                                                    <img src="git.png" style=" width: 50px;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="project-item flex-container column">
+                                            <div class="flex-container project-border project-photo"></div>
+                                            <div class="flex-container project-border row project-desc">
                                                 <div class="" style="flex: 2;">
                                                     <p>PROJECT 1</p>
                                                     <p> STATUS : </p>
@@ -173,8 +188,33 @@
                                             </div>
                                         </div>
                                         <div class="project-item flex-container column">
-                                            <div class="flex-container green-border project-photo"></div>
-                                            <div class="flex-container green-border row project-desc">
+                                            <div class="flex-container project-border project-photo"></div>
+                                            <div class="flex-container project-border row project-desc">
+                                                <div class="" style="flex: 2;">
+                                                    <p>PROJECT 1</p>
+                                                    <p> STATUS : </p>
+                                                </div>
+                                                <div class=" ">
+                                                    <img src="git.png" style=" width: 50px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-item flex-container column">
+                                            <div class="flex-container project-border project-photo"></div>
+                                            <div class="flex-container project-border row project-desc">
+                                                <div class="" style="flex: 2;">
+                                                    <p>PROJECT 1</p>
+                                                    <p> STATUS : </p>
+                                                </div>
+                                                <div class=" ">
+                                                    <img src="git.png" style=" width: 50px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="project-item flex-container column">
+                                            <div class="flex-container project-border project-photo"></div>
+                                            <div class="flex-container project-border row project-desc">
                                                 <div class="" style="flex: 2;">
                                                     <p>PROJECT 2</p>
                                                     <p> STATUS : </p>
@@ -185,8 +225,8 @@
                                             </div>
                                         </div>
                                         <div class="project-item flex-container column">
-                                            <div class="flex-container green-border project-photo"></div>
-                                            <div class="flex-container green-border row project-desc">
+                                            <div class="flex-container project-border project-photo"></div>
+                                            <div class="flex-container project-border row project-desc">
                                                 <div class="" style="flex: 2;">
                                                     <p>PROJECT 3</p>
                                                     <p> STATUS : </p>
@@ -197,8 +237,8 @@
                                             </div>
                                         </div>
                                         <div class="project-item flex-container column">
-                                            <div class="flex-container green-border project-photo"></div>
-                                            <div class="flex-container green-border row project-desc">
+                                            <div class="flex-container project-border project-photo"></div>
+                                            <div class="flex-container project-border row project-desc">
                                                 <div class="" style="flex: 2;">
                                                     <p>PROJECT 4</p>
                                                     <p> STATUS : </p>
@@ -208,11 +248,15 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
+                                        
 
                                     </section>
 
                                 </section>
                             </div>
+
+                            <!--  CONTACT  -->
                             <div id="contactContent" class="content flex-item "><span class="prompt">root@LordHugo:~$
                                 </span><span class="command"></span>cat contact.txt<span class="cursor"></span></div>
                         </section>
