@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Your Portfolio - Ubuntu CLI Style</title>
     <link rel="stylesheet" href="style.css">
 
@@ -73,19 +74,19 @@
                                 </h3>
                             </div>
                         </a>
-                        <a href="#ExpContent class=" class="link ">
+                        <a href="#expContent" class="link ">
                             <div class="grid-item box-shadow-3d">
                                 <h3>
                                     EXPERIENCE
                                 </h3>
                             </div>
                         </a>
-                        <a href="#aboutSkills" class="link">
-                        <div class="grid-item box-shadow-3d">
-                            <h3>
-                                SKILLS
-                            </h3>
-                        </div>
+                        <a href="#aboutSkills" class="link" id="skillbutton">
+                            <div class="grid-item box-shadow-3d">
+                                <h3>
+                                    SKILLS
+                                </h3>
+                            </div>
                         </a>
 
                     </section>
@@ -185,6 +186,9 @@
                                                             style=" width: 50px;"></a>
                                                 </div>
                                             </div>
+                                            <section class="project-info">
+                                                <p>Program solver untuk permainan WikiRace</p>
+                                            </section>
                                         </div>
                                         <div class="project-item flex-container column">
                                             <div class="flex-container project-border project-photo">
@@ -195,14 +199,14 @@
                                                     <p>Kerop-OS Operating SYSTEM</p>
                                                     <p> STATUS : FINISHED</p>
                                                 </div>
-                                                <div class=" ">
+                                                <div>
                                                     <a href="https://github.com/miannetopokki/os-2024-kerop-os"
                                                         target="_blank" class="image-link"><img src="git.png"
                                                             style=" width: 50px;"></a>
                                                 </div>
                                             </div>
-                                            <section class="">
-                                                <p class="">Operating System berbasis x86 32-bit Protected Mode yang
+                                            <section class="project-info">
+                                                <p>Operating System berbasis x86 32-bit Protected Mode yang
                                                     berjalan pada emulator QEMU</p>
                                             </section>
                                         </div>
@@ -221,19 +225,68 @@
                                                             style=" width: 50px;"></a>
                                                 </div>
                                             </div>
+                                            <section class="project-info">
+                                                <p>Project information here</p>
+                                            </section>
                                         </div>
-
-
-
-
                                     </section>
 
                                 </section>
                             </div>
 
                             <!--  CONTACT  -->
-                            <div id="contactContent" class="content flex-item "><span class="prompt">root@LordHugo:~$
-                                </span><span class="command"></span>cat contact.txt<span class="cursor"></span></div>
+                            <div id="contactContent" class="content flex-item ">
+
+                                <section class="flex-container column " style="gap: 20px; padding: 20px;">
+                                    <section class="prompt-section">
+                                      
+                                        <div><span class="prompt">root@LordHugo:~$ </span><span class="command">cat contact.txt</span></div>
+                                        <div class="error"><span class="prompt"></span>error: permission denied.</div>
+                                        <div><span class="prompt">root@LordHugo:~$ </span><span class="command">sudo cat contact.txt</span></div>
+                                        <div class="sudo">[sudo] password for root:</div>
+                                        <div class="sudo">access granted!<span class="cursor"></span></div>  
+    
+                                    </section>
+                                    <section class="contact-grid ">
+                                        <div class="contact-grid-item box-shadow-3d">
+                                            <div class="flex-container profile-photo ">
+                                                <img src = "contactfoto/mail.png" class="foto">
+                                            </div>
+                                        </div>
+                                        <div class="contact-grid-item box-shadow-3d">
+                                            <div class="flex-container profile-photo ">
+                                                <img src = "contactfoto/mail.png" class="foto">
+                                            </div>
+                                        </div>
+                                        <div class="contact-grid-item box-shadow-3d">
+                                            <div class="flex-container profile-photo ">
+                                                <img src = "contactfoto/mail.png" class="foto">
+                                            </div>
+                                        </div>
+                                        <div class="contact-grid-item box-shadow-3d">
+                                            <div class="flex-container profile-photo ">
+                                                <img src = "contactfoto/mail.png" class="foto">
+                                            </div>
+                                        </div>
+    
+                                    </section>
+                                </section>
+                                
+                            </div>
+
+
+
+                            <!--  EXPERIENCES  -->
+                            <div id="expContent" class="content flex-item "><span class="prompt">root@LordHugo:~$
+                                </span><span class="command"></span>cat experience.txt<span class="cursor"></span>
+                            </div>
+
+
+
+                            <!--  SKILLS  -->
+                            <div id="#aboutSkills" class="content flex-item "><span class="prompt">root@LordHugo:~$
+                                </span><span class="command"></span>ls skills<span class="cursor"></span><
+                                /div>
                         </section>
 
                     </section>

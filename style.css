@@ -18,12 +18,14 @@ html {
     justify-content: center;
     padding: 2%;
     align-items: center;
-    /* max-width: 3000px; */
+
 
 }
-#change.flex-container{
+
+#change.flex-container {
     flex-direction: row;
 }
+
 .box-shadow-3d {
     box-shadow: 1px 1px 0px #025a02,
         2px 2px 0px #025a02,
@@ -133,12 +135,14 @@ html {
     border-width: 0px;
 
 }
-.yellow-border{
+
+.yellow-border {
     border-style: solid;
     border-color: #00ff00;
     border-width: 0px;
 }
-.blue-border{
+
+.blue-border {
     border-style: solid;
     border-color: #3c3eb88c;
     border-width: 0px;
@@ -172,6 +176,35 @@ html {
 }
 
 
+.prompt-section {
+
+}
+
+
+.error {
+    color: red;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    padding: 20px;
+    gap: 40px;
+
+
+}
+
+.contact-grid-item {
+    border: 2px dashed rgba(54, 139, 51, 0.8);
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+
+}
+
 .grid-item {
     border: 1px solid rgba(110, 41, 41, 0.8);
     padding: 20px;
@@ -193,40 +226,41 @@ html {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 600px 600px ;
-    grid-template-rows: 500px 500px ;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 500px 500px;
     padding: 10px;
     gap: 20px;
     overflow-y: auto;
     max-height: 700px;
 }
+
 .projects-grids {
-    max-height: 100vh; /* Set a maximum height */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 10px; /* Optional: Add some padding for aesthetics */
-    box-sizing: border-box; /* Include padding in height calculations */
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
     grid-template-columns: 120vw;
     grid-template-rows: 80vw;
-    
+
 
 }
 
-/* For WebKit browsers (Chrome, Safari) */
+
 .projects-grid::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
 }
 
 .projects-grid::-webkit-scrollbar-track {
-    background: black; /* Track color */
+    background: black;
 }
 
 .projects-grid::-webkit-scrollbar-thumb {
-    background: green; /* Thumb color */
-    border-radius: 10px; /* Rounded corners */
+    background: green;
+    border-radius: 10px;
 }
 
 .projects-grid::-webkit-scrollbar-thumb:hover {
-    background: darkgreen; /* Thumb color on hover */
+    background: darkgreen;
 }
 
 .project-photo.flex-container {
@@ -267,9 +301,9 @@ html {
 
 }
 
-.cli-window{
+.cli-window {
     background-color: #1b1b25;
-    border-radius: 10px ;
+    border-radius: 10px;
     justify-content: space-between;
 
 }
@@ -284,8 +318,8 @@ html {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease;
-    position: absolute;/*Harus fixed soalnya dia invis*/
-    width: 62%; /*Harus fixed soalnya dia invis*/
+    position: absolute;
+    width: 62%;
 }
 
 
@@ -340,10 +374,12 @@ html {
     background-color: #252526;
     border-bottom: none;
 }
+
 .icons {
     color: white;
     font-size: 20px;
 }
+
 .terminal-tabs {
     justify-content: flex-start;
     padding: 20px;
@@ -361,118 +397,124 @@ html {
     padding: 10px;
     flex-grow: 1;
 }
-#aboutflex.flex-container{
+
+#aboutflex.flex-container {
     flex-direction: row;
 }
 
-.foto{
+.foto {
     max-width: 100%;
     max-height: 100%;
-    transition: transform 0.3s; /* Transisi untuk efek hover */
-     
+    transition: transform 0.3s;
+
 }
-.foto:hover{
+
+.foto:hover {
     transform: scale(0.98);
 }
-/* Custom scrollbar styles */
+
 .aboutme {
     max-height: 700px;
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 10px; /* Optional: Add some padding for aesthetics */
-    box-sizing: border-box; /* Include padding in height calculations */
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
     width: 100%;
 }
 
-/* For WebKit browsers (Chrome, Safari) */
+
 .aboutme::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
 }
 
 .aboutme::-webkit-scrollbar-track {
-    background: black; /* Track color */
+    background: black;
 }
 
 .aboutme::-webkit-scrollbar-thumb {
-    background: green; /* Thumb color */
-    border-radius: 10px; /* Rounded corners */
+    background: green;
+    border-radius: 10px;
 }
 
 .aboutme::-webkit-scrollbar-thumb:hover {
-    background: darkgreen; /* Thumb color on hover */
+    background: darkgreen;
 }
 
-/* For Firefox */
+
 .aboutme {
-    scrollbar-width: thin; /* Thin scrollbar */
-    scrollbar-color: green black; /* Thumb color and track color */
+    scrollbar-width: thin;
+    scrollbar-color: green black;
 }
+
 .aboutme>article>p {
     font-size: 20px;
 }
 
-#ttabs.flex-container{
+#ttabs.flex-container {
     flex-direction: row;
 }
 
 .profile-photo {
-    border-radius: 10px; /* Optional: adds rounded corners */
-    transition: transform 0.3s; /* Smooth effect on hover */
+    border-radius: 10px;
+    transition: transform 0.3s;
     max-height: 800px;
     max-width: 500px;
 }
 
 .profile-photo:hover {
-    transform: scale(1.02); /* Scale up slightly on hover */
+    transform: scale(1.02);
 }
 
-/* Gaya untuk tautan */
+
 .image-link {
-    display: inline-block; /* Agar efek hover bekerja dengan baik */
-    overflow: hidden; /* Menghindari gambar melampaui batas */
-    border-radius: 8px; /* Sudut melingkar (opsional) */
-    transition: transform 0.3s; /* Transisi untuk efek hover */
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
 
-/* Efek saat hover */
+
 .image-link:hover {
-    transform: scale(1.1); /* Memperbesar gambar saat dihover */
+    transform: scale(1.1);
 }
 
-/* Efek saat diklik */
+
 .image-link:active {
-    transform: scale(0.95); /* Memperkecil gambar saat diklik */
+    transform: scale(0.95);
 }
 
-/* Gaya untuk gambar */
+
 .image-link img {
-    display: block; /* Menghilangkan spasi di bawah gambar */
-    width: 300px; /* Lebar gambar */
-    height: auto; /* Tinggi otomatis untuk menjaga aspek rasio */
-    transition: opacity 0.3s; /* Transisi untuk efek fade */
+    display: block;
+    width: 300px;
+    height: auto;
+    transition: opacity 0.3s;
 }
 
-/* Efek fade saat hover */
+
 .image-link:hover img {
-    opacity: 0.8; /* Mengurangi opasitas saat dihover */
+    opacity: 0.8;
 }
 
 
 @media (max-width: 1200px) {
     .semibody {
-        /* Ensure no fixed width that exceeds viewport */
-        width: 120vw; /* Changed from 100vh to 100% */
+
+        width: 120vw;
         background-color: black;
         justify-content: center;
         padding: 1%;
         display: flex;
         align-items: center;
     }
-    #change.flex-container{
+
+    #change.flex-container {
         flex-direction: column;
     }
-    #aboutflex.flex-container{
+
+    #aboutflex.flex-container {
         flex-direction: column;
     }
+
     body {
         background-color: #1E1E1E;
         color: #00ff00;
@@ -481,47 +523,55 @@ html {
         margin: 0;
         padding: 0px;
         font-size: 15px;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-x: hidden;
     }
+
     .profile-photo {
-        border-radius: 10px; /* Optional: adds rounded corners */
-        transition: transform 0.3s; /* Smooth effect on hover */
+        border-radius: 10px;
+        transition: transform 0.3s;
         max-height: 50%;
         max-width: 100%;
     }
+
     .aboutme>article>p {
         font-size: 20px;
     }
+
     .profile-photo:hover {
-        transform: scale(1.02); /* Scale up slightly on hover */
+        transform: scale(1.02);
     }
+
     .terminal {
         background-color: #000000;
         border-radius: 5px;
         padding: 0px;
         height: 165vh;
     }
-    #ttabs.flex-container{
+
+    #ttabs.flex-container {
         flex-direction: column;
     }
+
     .content {
         visibility: hidden;
         opacity: 0;
         transition: opacity 0.3s ease;
-        position: absolute;/*Harus fixed soalnya dia invis*/
-        width: 86vw; /*Harus fixed soalnya dia invis*/
+        position: absolute;
+        width: 86vw;
     }
+
     .projects-grid {
-        max-height: 100vh; /* Set a maximum height */
-        overflow-y: auto; /* Enable vertical scrolling */
-        padding: 10px; /* Optional: Add some padding for aesthetics */
-        box-sizing: border-box; /* Include padding in height calculations */
-        grid-template-columns: 120vw;
-        grid-template-rows: 80vw;
-        
+        max-height: 100vh;
+        overflow-y: auto;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+
 
     }
-    
+
     .project-item {
         border: 1px solid rgba(110, 41, 41, 0.8);
         padding: 10px;
@@ -529,25 +579,28 @@ html {
         text-align: center;
         cursor: pointer;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        /* Remove fixed height to allow natural sizing */
-        height: auto; /* Optional: Ensure height is auto for flexibility */
     }
 
     .project-photo {
-        max-height: 225px; /* Maintain max height for images */
-        width: 100%; /* Make sure images are responsive */
-        object-fit: cover; /* Ensure images cover the area without stretching */
+        max-height: 225px;
+        width: 100%;
+        object-fit: cover;
     }
-    
+
     .project-desc {
-        max-height: 100px; /* Maintain max height for description */
-        height: auto; /* Remove fixed height */
-        font-size: 18px;
-        padding: 10px;
+        max-height: 100px;
+        height: auto;
+        font-size: 12px;
+        padding: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border: #000000;
+        border-bottom: 2px solid green;
+
+
     }
+
     .grid-container {
         display: grid;
         grid-template-columns: 35vw 35vw;
@@ -555,8 +608,13 @@ html {
         padding: 20px;
         gap: 10px;
     }
-    
-    
+
+    .project-info>p {
+        font-size: 12px;
+        color: white;
+    }
+
+
     .grid-item {
         border: 1px solid rgba(110, 41, 41, 0.8);
         padding: 20px;
@@ -566,7 +624,7 @@ html {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         position: relative;
     }
-    
+
     #outer.flex-container {
         margin: 0px;
         justify-content: center;
@@ -574,11 +632,12 @@ html {
         padding: 10px;
 
     }
+
     .select-box {
         flex: 0;
         height: 1000px;
     }
-    
+
     .ascii-art {
         font-family: "Courier New", Courier, monospace;
         color: #00ff00;
@@ -586,8 +645,9 @@ html {
         text-align: center;
         width: 100%;
         margin: 20px 0;
-    
+
     }
+
     .ascii-art {
         font-family: "Courier New", Courier, monospace;
         color: #00ff00;
@@ -595,25 +655,26 @@ html {
         text-align: center;
         width: 100%;
         margin: 20px 0;
-        font-size: 5px; /* Smaller font size for mobile */
-    
+        font-size: 5px;
+
     }
+
     .aboutme {
         max-height: 80vh;
-        overflow-y: auto; /* Enable vertical scrolling */
-        padding: 10px; /* Optional: Add some padding for aesthetics */
-        box-sizing: border-box; /* Include padding in height calculations */
+        overflow-y: auto;
+        padding: 10px;
+        box-sizing: border-box;
         width: 100%;
     }
-    
+
     .tabs {
         display: flex;
         border-bottom: 2px solid #333;
         margin-bottom: 10px;
         justify-content: space-between;
-    
+
     }
-    
+
     .tab-button {
         background-color: #000000;
         border: none;
@@ -626,40 +687,45 @@ html {
         max-height: 2vh;
         font-size: 8px;
     }
-    
+
     .tab-button.nonactive {
         background-color: #252526;
         border-bottom: none;
     }
+
     .icons {
         color: white;
         font-size: 10px;
         padding: 1px;
         margin: 1px;
     }
+
     .terminal-tabs {
         justify-content: flex-start;
         padding: 1px;
     }
-    
+
     .terminal-icons {
         justify-content: flex-start;
         padding: 10px;
         max-height: 1vh;
         align-items: center;
     }
-    .cli-window{
+
+    .cli-window {
         background-color: #1b1b25;
-        border-radius: 10px ;
+        border-radius: 10px;
         justify-content: space-between;
-    
+
     }
-    
-    
 
-        
-    
-    
+
+    #skillbutton {
+        grid-column: 1 / 3;
+    }
+
+
+
+
+
 }
-
-
