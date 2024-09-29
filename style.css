@@ -187,13 +187,49 @@ html {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 20vw 20vw;
     padding: 20px;
     gap: 40px;
+    overflow-y: auto;
+    max-height: 700px;
 
 
 }
+.skills-grid {
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    padding: 20px;
+    gap: 40px;
+    overflow-y: auto;
+    max-height: 550px;
+}
+.skills-grid::-webkit-scrollbar {
+    width: 12px;
+}
 
+.skills-grid::-webkit-scrollbar-track {
+    background: black;
+}
+
+.skills-grid::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 10px;
+}
+
+.skills-grid::-webkit-scrollbar-thumb:hover {
+    background: darkgreen;
+}
+
+}
+.contact-desc {
+    max-height: 225px;
+    width: 90%;
+    object-fit: cover;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;  
+    
+  
+}
 .contact-grid-item {
     border: 2px dashed rgba(54, 139, 51, 0.8);
     padding: 20px;
@@ -202,6 +238,7 @@ html {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    justify-content: center;
 
 }
 
@@ -337,6 +374,8 @@ html {
 
 
 #aboutContent:target,
+#expContent:target,
+#aboutSkills:target,
 #projectsContent:target,
 #contactContent:target {
     visibility: visible;
@@ -344,6 +383,8 @@ html {
 }
 
 #aboutContent:target~.show,
+#expContent:target~.show,
+#aboutSkills:target~.show,
 #projectsContent:target~.show,
 #contactContent:target~.show {
     visibility: visible;
@@ -570,6 +611,27 @@ html {
 
 
 
+    }
+    .contact-grid {
+        max-height: 100vh;
+        overflow-y: auto;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+    .skills-grid {
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        max-height: 100vh;
+        flex-direction: column;
+    
+    
     }
 
     .project-item {
